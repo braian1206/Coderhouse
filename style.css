@@ -15,13 +15,32 @@ header nav ul {
 
 /* index */
     /*barra*/
+.custom-navbar {
+        background-color: #222222;
+}
+.custom-navbar .nav-link {
+        color: #ffffff;
+}
+      
+.custom-navbar .nav-link:hover {
+        color: #dddddd;
+}
+      
+.custom-navbar .navbar-toggler {
+        border-color: #fff;
+}
+      
+.custom-navbar .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+    
 header {
     display: flex;
     justify-content: space-between; /*separar logo de botones*/
     background-color: #222222;   /* color de la barra */
     align-items: center;
     padding: 20px;
-}
+} 
 main{
     display: flex;
     justify-content: center;
@@ -89,9 +108,8 @@ h3 {
 
 .carnet{
     justify-content: center;
-    text-align: left;
-    margin-left: 25%;
-    margin-right: 25%;
+    text-align: center;
+    
 }
 
 .carnet ul{
@@ -137,5 +155,10 @@ h3 {
         display: grid;
         grid-template-columns: repeat(1,1fr);
         font-weight: bold;
+    }
+    #check{
+        width: 50%;
+        height: 50%;
+
     }
 }
