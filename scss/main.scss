@@ -139,13 +139,13 @@ main{
     width: 50%;
     height: auto;   
     }
-    p {
-    margin-left: 25%;
-    width: 10%;
-    text-align: center;
-    color: #fff;
-    background-color: $color_secundario;
-    }
+    p{
+        margin-left: 25%;
+        width: 40%;
+        text-align: center;
+        color: #fff;
+        background-color: #222222;
+     }
 }       
 #acc{
     @include medidas(100%);
