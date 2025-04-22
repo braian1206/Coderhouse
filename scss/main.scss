@@ -1,8 +1,12 @@
+@import "utilidades/variables";
+@import "utilidades/mixin";
+
+
 //nesting
 
     /*barra*/
 .custom-navbar {
-        background-color: #222222;
+        background-color: $color_secundario;
 }
 .custom-navbar .nav-link {
         color: #ffffff;
@@ -23,7 +27,7 @@
 header{
     display: flex;
     justify-content: space-between;
-    background-color: #222222;
+    background-color: $color_secundario;
     align-items: center;
     padding: 20px;
 }
@@ -41,7 +45,7 @@ main{
     }
 } 
 .img1 {                 
-    width: 100%;
+    @include medidas(100%);
     height: auto;
 }
 .noticias {
@@ -56,12 +60,12 @@ main{
     padding: 15px;
     border-radius: 8px;
     img{
-    width: 100%;
+    @include medidas(100%);
     height: auto;
     margin-top: 10px;  
     }
     h2 a{
-        color: red;
+        color: $color_principal;
     }
 }
 #logo {
@@ -92,16 +96,14 @@ main{
 /*                                        NOTICIAS                     */
 .container{ 
     div img {
-    width: 100%;
+    @include medidas(100%);
     height: 100%;
     }
 }
 /*                                      FOOTER                              */
 .footer{
-    background-color: #1f1f1f;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
+    background-color: $color_secundario;
+    @include footer(#fff,10px,center);
     img{
     width: 10%;
     height: auto;
@@ -110,7 +112,7 @@ main{
 
 /*                                  PLANTEL                             */
 .plantel img{
-    width: 100%;
+    @include medidas(100%);
     height: 100%;
 }
 /*                                  CARNET                                 */
@@ -120,7 +122,7 @@ main{
     text-align: center;
     ul{ 
         list-style-position: inside;
-        color: red;
+        color: $color_principal;
     }   
 }
 #check{
@@ -142,11 +144,11 @@ main{
     width: 10%;
     text-align: center;
     color: #fff;
-    background-color: #222222;
+    background-color: $color_secundario;
     }
 }       
 #acc{
-    width: 100%;
+    @include medidas(100%);
 }
 
 /* Desktop NOTICIAS Y PLANTEL */ 

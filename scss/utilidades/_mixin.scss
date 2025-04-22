@@ -1,0 +1,8 @@
+ @mixin medidas ($width){
+    width: $width;
+ }
+ @mixin footer ($color,$padding,$text){
+    color: $color;
+    padding: $padding;
+    text-align: $text;
+ }
