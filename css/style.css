@@ -63,8 +63,12 @@ main {
   height: auto;
   margin-top: 10px;
 }
-.columna h2 a {
+.columna h1 a {
   color: red;
+}
+
+h1 {
+  text-align: center;
 }
 
 #logo {
@@ -139,11 +143,14 @@ main {
   height: auto;
 }
 .acceso p {
-  margin-left: 25%;
+  margin: 0 auto;
   width: 40%;
   text-align: center;
   color: #fff;
   background-color: #222222;
+}
+.acceso h1 {
+  text-align: center;
 }
 
 #acc {

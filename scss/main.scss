@@ -64,9 +64,12 @@ main{
     height: auto;
     margin-top: 10px;  
     }
-    h2 a{
+    h1 a{
         color: $color_principal;
     }
+}
+h1{
+    text-align: center;
 }
 #logo {
     width: 50%;
@@ -140,11 +143,14 @@ main{
     height: auto;   
     }
     p{
-        margin-left: 25%;
+        margin: 0 auto;
         width: 40%;
         text-align: center;
         color: #fff;
         background-color: #222222;
+     }
+     h1{
+        text-align: center;
      }
 }       
 #acc{
